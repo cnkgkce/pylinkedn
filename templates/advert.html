@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+
+
+
+<div class="container">
+
+    <form method="post">
+        <input type="text" name="title" placeholder="Başlık giriniz..." style="margin-bottom: 10px;">
+        {{ ckeditor.create() | safe }}
+        <input type="submit" style="margin-top: 10px;" class="btn btn-danger">
+    </form>
+    </div>
+
+
+<script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
+
+{% endblock %}
+
